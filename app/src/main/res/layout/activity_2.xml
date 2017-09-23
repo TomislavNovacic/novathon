@@ -30,7 +30,7 @@
         android:text="Food"
         tools:layout_editor_absoluteY="83dp"
         app:layout_constraintRight_toLeftOf="@+id/food_num"
-        android:layout_marginRight="113dp" />
+        android:layout_marginRight="144dp" />
 
     <TextView
         android:id="@+id/drinks"
@@ -39,7 +39,7 @@
         tools:layout_editor_absoluteY="120dp"
         tools:text="Drinks"
         app:layout_constraintRight_toLeftOf="@+id/drink_num"
-        android:layout_marginRight="114dp" />
+        android:layout_marginRight="145dp" />
 
     <TextView
         android:id="@+id/bills"
@@ -48,7 +48,7 @@
         android:text="Bills"
         tools:layout_editor_absoluteY="163dp"
         app:layout_constraintRight_toLeftOf="@+id/bills_num"
-        android:layout_marginRight="115dp" />
+        android:layout_marginRight="146dp" />
 
     <TextView
         android:id="@+id/Fuel"
@@ -57,7 +57,7 @@
         android:text="Fuel"
         tools:layout_editor_absoluteY="201dp"
         app:layout_constraintRight_toLeftOf="@+id/fuel_num"
-        android:layout_marginRight="115dp" />
+        android:layout_marginRight="146dp" />
 
     <TextView
         android:id="@+id/Other_expenses"
@@ -66,7 +66,7 @@
         android:text="Other expenses"
         tools:layout_editor_absoluteY="247dp"
         app:layout_constraintRight_toLeftOf="@+id/other_num"
-        android:layout_marginRight="116dp" />
+        android:layout_marginRight="75dp" />
 
     <TextView
         android:id="@+id/total"
@@ -75,7 +75,7 @@
         android:text="TOTAL"
         tools:layout_editor_absoluteY="283dp"
         app:layout_constraintRight_toLeftOf="@+id/total_num"
-        android:layout_marginRight="120dp" />
+        android:layout_marginRight="131dp" />
 
     <TextView
         android:id="@+id/Remaining"
@@ -84,7 +84,7 @@
         android:text="Remaining"
         tools:layout_editor_absoluteY="324dp"
         app:layout_constraintRight_toLeftOf="@+id/rem_num"
-        android:layout_marginRight="120dp" />
+        android:layout_marginRight="107dp" />
 
     <TextView
         android:id="@+id/food_num"
