@@ -6,4 +6,146 @@
     android:layout_height="match_parent"
     tools:context="com.example.tnovacic.novathon.Activity2">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
+        app:srcCompat="@drawable/btn_random_scan_clear" />
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        tools:layout_editor_absoluteY="83dp"
+        app:layout_constraintRight_toLeftOf="@+id/food_num"
+        android:layout_marginRight="113dp" />
+
+    <TextView
+        android:id="@+id/drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="120dp"
+        tools:text="Drinks"
+        app:layout_constraintRight_toLeftOf="@+id/drink_num"
+        android:layout_marginRight="114dp" />
+
+    <TextView
+        android:id="@+id/bills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bills"
+        tools:layout_editor_absoluteY="163dp"
+        app:layout_constraintRight_toLeftOf="@+id/bills_num"
+        android:layout_marginRight="115dp" />
+
+    <TextView
+        android:id="@+id/Fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel"
+        tools:layout_editor_absoluteY="201dp"
+        app:layout_constraintRight_toLeftOf="@+id/fuel_num"
+        android:layout_marginRight="115dp" />
+
+    <TextView
+        android:id="@+id/Other_expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other expenses"
+        tools:layout_editor_absoluteY="247dp"
+        app:layout_constraintRight_toLeftOf="@+id/other_num"
+        android:layout_marginRight="116dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        tools:layout_editor_absoluteY="283dp"
+        app:layout_constraintRight_toLeftOf="@+id/total_num"
+        android:layout_marginRight="120dp" />
+
+    <TextView
+        android:id="@+id/Remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining"
+        tools:layout_editor_absoluteY="324dp"
+        app:layout_constraintRight_toLeftOf="@+id/rem_num"
+        android:layout_marginRight="120dp" />
+
+    <TextView
+        android:id="@+id/food_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <TextView
+        android:id="@+id/drink_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,00"
+        tools:layout_editor_absoluteX="230dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/food_num" />
+
+    <TextView
+        android:id="@+id/bills_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,00"
+        tools:layout_editor_absoluteX="230dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/drink_num" />
+
+    <TextView
+        android:id="@+id/fuel_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,00"
+        tools:layout_editor_absoluteX="230dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/bills_num" />
+
+    <TextView
+        android:id="@+id/other_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,00"
+        tools:layout_editor_absoluteX="230dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_num" />
+
+    <TextView
+        android:id="@+id/total_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,00"
+        tools:layout_editor_absoluteX="230dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/other_num" />
+
+    <TextView
+        android:id="@+id/rem_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,00"
+        tools:layout_editor_absoluteX="230dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/total_num" />
+
 </android.support.constraint.ConstraintLayout>
