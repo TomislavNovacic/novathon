@@ -29,6 +29,7 @@ public class Activity2 extends AppCompatActivity {
         float_but = (FloatingActionButton) findViewById(R.id.float_but);
 
 
+
         bars[0].setBackgroundColor(Color.parseColor("#3F51B5"));
         bars[1].setBackgroundColor(Color.parseColor("#64B5F6"));
         bars[2].setBackgroundColor(Color.parseColor("#F4511E"));
