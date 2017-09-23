@@ -39,7 +39,7 @@ public class Activity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams((int)(65*0.50),30);
-                bars[2].setLayoutParams(parms);
+                //bars[2].setLayoutParams(parms);
             }
         });
 
