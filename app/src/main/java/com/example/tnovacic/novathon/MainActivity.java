@@ -27,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
         if( (user.getText().equals("")) && (password.getText().equals(""))){
             String zaslanje = JS.pakiranje(user.getText().toString(), password.getText().toString());
         }
+        startActivity(Activity2);
     }
 }
