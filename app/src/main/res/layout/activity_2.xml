@@ -179,59 +179,68 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="116dp" />
 
-    <LinearLayout
-        android:id="@+id/food_bar"
-        android:layout_width="65dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/drinks_bar"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"></LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="339dp"
+        android:layout_height="57dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="16dp">
 
-    <LinearLayout
-        android:id="@+id/drinks_bar"
-        android:layout_width="65dp"
-        android:layout_height="30dp"
-        android:layout_marginRight="-8dp"
-        android:orientation="horizontal"
-        app:layout_constraintRight_toLeftOf="@+id/bills_bar"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/other_bar"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/other_bar"
-        android:layout_width="65dp"
-        android:layout_height="30dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/fuel_bar"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/bills_bar"
+            android:layout_toEndOf="@+id/bills_bar"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toLeftOf="@+id/other_bar"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/fuel_bar"
-        android:layout_width="65dp"
-        android:layout_height="30dp"
-        android:layout_marginRight="-7dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintRight_toLeftOf="@+id/other_bar"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/bills_bar"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/drinks_bar"
+            android:layout_toEndOf="@+id/drinks_bar"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toLeftOf="@+id/fuel_bar"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:id="@+id/bills_bar"
-        android:layout_width="65dp"
-        android:layout_height="30dp"
-        android:layout_marginRight="-2dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintRight_toLeftOf="@+id/fuel_bar"
-        app:layout_constraintTop_toTopOf="parent">
+        </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/drinks_bar"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/food_bar"
+            android:layout_toEndOf="@+id/food_bar"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toLeftOf="@+id/bills_bar"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/food_bar"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/other_bar"
+            android:layout_marginStart="65dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/drinks_bar"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

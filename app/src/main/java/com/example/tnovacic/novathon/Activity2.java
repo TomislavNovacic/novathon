@@ -13,17 +13,19 @@ public class Activity2 extends AppCompatActivity {
 
     LinearLayout[] bars = new LinearLayout[5];
     FloatingActionButton float_but;
+    RelativeLayout rel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+        rel = (RelativeLayout) findViewById(R.id.bar);
 
-        bars[0] = (LinearLayout) findViewById(R.id.food_bar);
-        bars[1] = (LinearLayout) findViewById(R.id.drinks_bar);
-        bars[2] = (LinearLayout) findViewById(R.id.bills_bar);
-        bars[3] = (LinearLayout) findViewById(R.id.fuel_bar);
-        bars[4] = (LinearLayout) findViewById(R.id.other_bar);
+        bars[0] = (LinearLayout) rel.findViewById(R.id.food_bar);
+        bars[1] = (LinearLayout) rel.findViewById(R.id.drinks_bar);
+        bars[2] = (LinearLayout) rel.findViewById(R.id.bills_bar);
+        bars[3] = (LinearLayout) rel.findViewById(R.id.fuel_bar);
+        bars[4] = (LinearLayout) rel.findViewById(R.id.other_bar);
         float_but = (FloatingActionButton) findViewById(R.id.float_but);
 
 
